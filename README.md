@@ -1,5 +1,5 @@
 <div align="center">
-[![YT-DLP](https://raw.githubusercontent.com/jaschrs/laligaapi/master/.github/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png)
+![YT-DLP](https://raw.githubusercontent.com/jaschrs/laligaapi/master/.github/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png)
 </div>
 
 # Overview
