@@ -1,5 +1,4 @@
 from flask import Flask
 
 def config_localservice():
-    app = Flask(__name__)
-    return app
+    return Flask(__name__)

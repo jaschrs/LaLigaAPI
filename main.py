@@ -1,8 +1,7 @@
-from flask import Flask
 from app.localservice import config_localservice
 from app.services.table import get_table
-
-app = Flask(__name__)
+from app.services.playerstats import get_player_stats
+from app.services.fixtures import get_fixtures
 
 url = "https://www.fotmob.com/api/data/tltable?leagueId=87"
 headers = {
@@ -18,5 +17,13 @@ if __name__ == "__main__":
     @app.route("/laliga_table")
     def table():
         return get_table(url, headers)
+
+    @app.route("/player/<player_name>")
+    def player(player_name):
+        return get_player_stats(player_name)
+
+    @app.route("/fixtures/<matchweek>")
+    def fixtures(matchweek):
+        return get_fixtures(matchweek)
 
     app.run(debug=True)

@@ -5,8 +5,8 @@ def get_table(url, headers):
 
     response = requests.get(url, headers=headers)
     response.raise_for_status()
-
     data = response.json()
+
     formatted = [
         {
             "position": team["idx"],
@@ -22,4 +22,5 @@ def get_table(url, headers):
         }
         for team in data[0]["data"]["table"]["all"]
     ]
+
     return jsonify("laliga_table", formatted)
