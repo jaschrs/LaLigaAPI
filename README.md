@@ -1,5 +1,6 @@
 <div align="center">
-<img width="320" height="244" alt="LaLiga_EA_Sports_2023_Vertical_Logo svg" src="https://raw.githubusercontent.com/jaschrs/laligaapi/master/.github/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png" />
+  
+[![LaLiga](https://raw.githubusercontent.com/jaschrs/laligaapi/master/.github/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png)](#readme)
 </div>
 
 # Overview
