@@ -11,7 +11,7 @@ Note: Currently only supports table requests
 With support from the highly popular football tracker "FotMob", this API provides the latest and most accurate information from The Campeonato Nacional de Liga de Primera División (LaLiga). Including live table updates, player statistics, and even fixtures. 
 
 # Usage
-1. Clone repo
+1. Clone repository
 2. Run `pip install -r requirements.txt` in the terminal
 3. Run main.py
 4. Follow link that appears in terminal
