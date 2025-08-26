@@ -1,5 +1,5 @@
 <div align="center">
-![LaLigaAPI](https://upload.wikimedia.org/wikipedia/commons/5/54/LaLiga_EA_Sports_2023_Vertical_Logo.svg)
+![LaLigaAPI](https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/LaLiga_EA_Sports_2023_Vertical_Logo.svg/1280px-LaLiga_EA_Sports_2023_Vertical_Logo.svg.png)
 </div>
 
 # Overview
