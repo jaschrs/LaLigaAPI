@@ -3,6 +3,8 @@
 [![Laliga](https://raw.githubusercontent.com/jaschrs/LaLigaAPI/refs/heads/master/.github/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png)](#readme)
 
 Note: Currently only supports table requests
+
+[Help](#help)
 </div>
 
 # Overview
@@ -18,6 +20,7 @@ With support from the highly popular football tracker "FotMob", this API provide
 
 # Endpoints
 /laligatable
+
 Returns the live LaLiga table in order
 ```js
 [
