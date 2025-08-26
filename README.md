@@ -16,6 +16,7 @@ With support from the highly popular football tracker "FotMob", this API provide
 3. Run main.py
 4. Follow link that appears in terminal
 5. Make requests with that link
+
 (Tested with Pycharm)
 
 # Endpoints
