@@ -1,5 +1,4 @@
 from flask import Flask
-import os
 from app.localservice import config_localservice
 from app.services.table import get_table
 
@@ -10,7 +9,7 @@ headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                   "AppleWebKit/537.36 (KHTML, like Gecko) "
                   "Chrome/139.0.0.0 Safari/537.36",
-    "X-Mas": os.getenv("X-MAS")
+    "X-Mas": "eyJib2R5Ijp7InVybCI6Ii9hcGkvZGF0YS9sZWFndWVzP2lkPTg3JmNjb2RlMz1DQU5fT04iLCJjb2RlIjoxNzU2MjM1OTYyNDEwLCJmb28iOiJwcm9kdWN0aW9uOmIxMGEyOTgxNTY5ZGFiODdhNTBjZDFmNjU4OGRmZTM1ZjMxYzM2ZTkifSwic2lnbmF0dXJlIjoiNEE3MTQ2ODJCMzNGQzA1QUQ4QThDNTQ3RTFDNEI4MzcifQ"
 }
 
 if __name__ == "__main__":
