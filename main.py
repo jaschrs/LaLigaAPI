@@ -1,5 +1,4 @@
 import flask
-
 from app.localservice import config_localservice
 from app.services.table import get_table
 from app.services.playerstats import get_player_stats

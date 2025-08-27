@@ -1,8 +1,6 @@
 import requests
-
 from flask import jsonify
 from app.public import publickey
-
 
 def get_fixtures(matchweek: int):
 
