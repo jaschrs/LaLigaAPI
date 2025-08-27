@@ -1,6 +1,6 @@
 import requests
 from flask import jsonify
-from app.public import publickey
+from app.public import PublicKey
 
 def get_table():
     """
@@ -9,7 +9,7 @@ def get_table():
     """
 
     # Fetch data from fotmob API
-    data: dict = requests.get(publickey.fotmobtable, headers=publickey.headers).json()
+    data: dict = requests.get(PublicKey.fotmobtable, headers=PublicKey.headers).json()
 
     # Format the league table
     formatted = [

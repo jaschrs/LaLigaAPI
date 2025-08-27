@@ -1,4 +1,4 @@
-class publickey:
+class PublicKey:
     """
     Class containing public keys and headers for fotmob API requests.
     """

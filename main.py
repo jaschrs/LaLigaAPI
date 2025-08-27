@@ -1,8 +1,8 @@
 # Importing flask here is redundant but allow to define the type for the app which I like
 import flask
-from app.localservice import config_local_service
+from app.local_service import config_local_service
 from app.services.table import get_table
-from app.services.playerstats import get_player_stats
+from app.services.player_stats import get_player_stats
 from app.services.fixtures import get_fixtures
 
 def main():
