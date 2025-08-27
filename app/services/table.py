@@ -5,7 +5,7 @@ from app.public import publickey
 
 def get_table():
 
-    data: dict = requests.get(publickey.laligafotmobapiurl, headers=publickey.headers).json()
+    data: dict = requests.get(publickey.fotmobtable, headers=publickey.headers).json()
 
     formatted = [
         {

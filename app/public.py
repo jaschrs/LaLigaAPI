@@ -1,6 +1,6 @@
 class publickey:
-    laligafotmobapiurl: str = "https://www.fotmob.com/api/data/tltable?leagueId=87"
-    laligaentireapi: str = "https://www.fotmob.com/api/data/leagues?id=87"
+    fotmobtable: str = "https://www.fotmob.com/api/data/tltable?leagueId=87"
+    fotmoblaliga: str = "https://www.fotmob.com/api/data/leagues?id=87"
     xmaskey: str = "eyJib2R5Ijp7InVybCI6Ii9hcGkvZGF0YS9sZWFndWVzP2lkPTg3JmNjb2RlMz1DQU5fT04iLCJjb2RlIjoxNzU2MjM1OTYyNDEwLCJmb28iOiJwcm9kdWN0aW9uOmIxMGEyOTgxNTY5ZGFiODdhNTBjZDFmNjU4OGRmZTM1ZjMxYzM2ZTkifSwic2lnbmF0dXJlIjoiNEE3MTQ2ODJCMzNGQzA1QUQ4QThDNTQ3RTFDNEI4MzcifQ"
     headers: dict = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "

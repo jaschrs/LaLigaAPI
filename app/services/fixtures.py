@@ -14,7 +14,7 @@ def get_fixtures(matchweek: int):
     if int(matchweek) < 1 or int(matchweek) > 38:
         return jsonify({"Matchweek number error": "Matchweek number must be between 1 and 38"}), 400
 
-    data: dict = requests.get(publickey.laligaentireapi, headers=publickey.headers).json()
+    data: dict = requests.get(publickey.fotmoblaliga, headers=publickey.headers).json()
 
     formatted: list = []
 

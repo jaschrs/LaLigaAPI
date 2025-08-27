@@ -8,7 +8,7 @@ from app.services.fixtures import get_fixtures
 def main():
     app: flask.app.Flask = config_localservice()
 
-    @app.route("/laliga_table")
+    @app.route("/table")
     def table():
         return get_table()
 
