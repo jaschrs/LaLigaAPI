@@ -24,7 +24,7 @@ This repository only provides the code to access and serve that information. Use
 - Repository only provides code to access publicy available data.
 - Data is sourced from FotMob, and users must respect FotMob’s terms.
 - I don’t own or license the data itself.
-- The entire project is for educational purposes, not to be used commercially
+- The entire project is for educational purposes only
 
 # Usage
 1. Clone repository
