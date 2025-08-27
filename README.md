@@ -36,9 +36,15 @@ This repository only provides the code to access and serve that information. Use
 (Tested with Pycharm)
 
 # Endpoints
-/table
 
-Returns the live LaLiga table in order
+Endpoint|Description
+:---|:---
+/table|Returns the live LaLiga table in order
+/fixtures/[matchweek number]|Returns the fixtures occurring on specified matchweek
+/player/[name as found on FotMob]|Returns player statistics specifically in LaLiga
+
+Example output: /table
+
 ```js
 [
   "laliga_table",
@@ -58,9 +64,8 @@ Returns the live LaLiga table in order
 ...
 ```
 
-/fixtures/[matchweek]
+Example output: /fixtures/[matchweek]
 
-Returns the fixtures occurring on specified matchweek
 ```js
 {
   "fixtures mw [matchweek specified]": [
@@ -79,4 +84,5 @@ Returns the fixtures occurring on specified matchweek
 ```
 
 # Help
-Ask AI with the proper context
+Usage help? : Ask AI
+Legal questions? : Read legal notice
