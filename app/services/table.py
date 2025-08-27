@@ -1,11 +1,11 @@
 import requests
 from flask import jsonify
 
-def get_table(url, headers):
+from app.public import publickey
 
-    response = requests.get(url, headers=headers)
-    response.raise_for_status()
-    data = response.json()
+def get_table():
+
+    data: dict = requests.get(publickey.laligafotmobapiurl, headers=publickey.headers).json()
 
     formatted = [
         {
