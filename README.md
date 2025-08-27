@@ -5,15 +5,9 @@
 Note: Currently does not support player statistics
 
 [Help](#help)
+
+[![Unofficial](https://img.shields.io/badge/Unofficial%20API-Not%20affiliated%20with%20FotMob%20Or%20LaLiga-red?style=for-the-badge)](#legal-notice)
 </div>
-
-<p align="center">
-  <b>Unofficial API · Not affiliated with FotMob or LaLiga</b>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Unofficial%20API-Not%20affiliated%20with%20FotMob%20Or%20LaLiga-red?style=for-the-badge" alt="Unofficial API Disclaimer">
-</p>
 
 # Overview
 With support from the highly popular football tracker "FotMob", this API provides the latest and most accurate information from The Campeonato Nacional de Liga de Primera División (LaLiga). Including live table updates, player statistics, and even fixtures. 
