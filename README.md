@@ -50,47 +50,91 @@ Example output: /table
   "laliga_table",
   [
     {
-      "position": int league position,
-      "team_name": "club name",
-      "played": int games played,
-      "won": int games won,
-      "drawn": int drawn games,
-      "lost": int games lost,
-      "goals_for": int goals scored by the team,
-      "goals_against": int goals scored against the team,
-      "goal_difference": int goals for subracted by goals against,
-      "points": int league points
+      "position": 1,
+      "team_name": "Villarreal",
+      "played": 2,
+      "won": 2,
+      "drawn": 0,
+      "lost": 0,
+      "goals_for": 7,
+      "goals_against": 0,
+      "goal_difference": 7,
+      "points": 6
     },
-...
 ```
 
 Example output: /fixtures/[matchweek]
 
 ```json
 {
-  "fixtures mw [matchweek specified]": [
+  "fixtures mw 2": [
     {
-      "home_team": "home team name",
-      "away_team": "away team name",
-      "round": int matchweek,
-      "canceled": boolean if match is canceled,
-      "started": boolean if match has begun,
-      "finished": boolean if match has concluded,
-      "match_date_utc": "match date and time",
-      "home_score": int home team score if applicable,
-      "away_score": int score of away team if applicable
+      "home_team": "Real Betis",
+      "away_team": "Deportivo Alaves",
+      "round": 2,
+      "canceled": false,
+      "started": true,
+      "finished": true,
+      "match_date_utc": "2025-08-22T19:30:00Z",
+      "home_score": 1,
+      "away_score": 0
     },
-...
 ```
 
 Example output: /[team name]/[player name]
 ```json
-{
-
-}
+[
+  {
+    "basic": {
+      "name": "Tajon Buchanan",
+      "birthday": {
+        "utcTime": "1999-02-08T00:00:00.000Z",
+        "timezone": "UTC"
+      },
+      "contractEnd": {
+        "utcTime": "2030-06-30T00:00:00.000Z",
+        "timezone": "UTC"
+      },
+      "isCoach": false,
+      "isCaptain": false,
+      "position(s)": {
+        "main": "Right Midfielder",
+        "secondary": [
+          {
+            "label": "Left Midfielder",
+            "key": "leftmidfielder"
+          },
+          {
+            "label": "Right Winger",
+            "key": "rightwinger"
+          }
+        ]
+      },
+      "height": 183,
+      "shirt": 17,
+      "age": 26,
+      "preferredFoot": "right",
+      "nationality": "Canada"
+    },
+    "statistics": {
+      "league": "LaLiga",
+      "season": "2025/2026",
+      "goals": 3,
+      "assists": 0,
+      "started": 1,
+      "mactches": 2,
+      "minutesPlayed": 133,
+      "rating": 8.35,
+      "yellowCards": 0,
+      "redCards": 0
+    }
+  }
+]
 ```
 
 # Help
 Usage help? : Ask AI
 
 Legal questions? : Read legal notice
+
+X-MAS key should be refreshed every 24hrs
