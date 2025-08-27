@@ -2,7 +2,7 @@
 
 [![Laliga](https://raw.githubusercontent.com/jaschrs/LaLigaAPI/refs/heads/master/.github/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png)](#readme)
 
-Note: Currently only supports table requests
+Note: Currently does not support player statistics
 
 [Help](#help)
 </div>
@@ -38,6 +38,26 @@ Returns the live LaLiga table in order
       "position": leauge position,
       "team_name": club name,
       "won": games won
+    },
+...
+```
+
+/fixtures/[matchweek]
+
+Returns the fixtures occurring on specified matchweek
+```js
+{
+  "fixtures mw [matchweek specified]": [
+    {
+      "away_score": score of away team,
+      "away_team": "away team name",
+      "canceled": boolean if match is canceled,
+      "finished": boolean if match has concluded,
+      "home_score": home team score,
+      "home_team": "home team name",
+      "match_date_utc": "match date and time",
+      "round": "matchweek",
+      "started": boolean if match has begun
     },
 ...
 ```
