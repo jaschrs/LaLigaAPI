@@ -13,7 +13,7 @@ With support from the highly popular football tracker "FotMob", this API provide
 # Disclaimer
 This project is not affiliated with or endorsed by FotMob. All data is owned by FotMob. This repository only provides code to access that data
 
-- Repo only provides code.
+- Repository only provides code to access publicy available data.
 - Data is sourced from FotMob, and users must respect FotMob’s terms.
 - I don’t own or license the data itself.
 - The entire project is for educational purposes, not to be used commercially
