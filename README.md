@@ -20,7 +20,7 @@ With support from the highly popular football tracker "FotMob", this API provide
 (Tested with Pycharm)
 
 # Endpoints
-/laligatable
+/table
 
 Returns the live LaLiga table in order
 ```js
