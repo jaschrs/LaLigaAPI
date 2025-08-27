@@ -3,7 +3,13 @@ from flask import jsonify
 from app.public import publickey
 
 def get_fixtures(matchweek: int):
+    """
+    Fetches and formats football fixtures for a given matchweek from fotmob API.
+    :param matchweek: int - Matchweek number (1-38)
+    :return: json - JSON response with fixtures for the specified matchweek
+    """
 
+    # Validate matchweek input from URL parameter
     try:
         int(matchweek)
     except ValueError:
@@ -12,8 +18,10 @@ def get_fixtures(matchweek: int):
     if int(matchweek) < 1 or int(matchweek) > 38:
         return jsonify({"Matchweek number error": "Matchweek number must be between 1 and 38"}), 400
 
+    # Fetch data from fotmob API
     data: dict = requests.get(publickey.fotmoblaliga, headers=publickey.headers).json()
 
+    # Format the fixtures for the specified matchweek
     formatted: list = []
 
     for match in data["matches"]["allMatches"]:

@@ -3,9 +3,15 @@ from flask import jsonify
 from app.public import publickey
 
 def get_table():
+    """
+    Fetches and formats the current La Liga table from fotmob API.
+    :return: json - JSON response with the formatted league table
+    """
 
+    # Fetch data from fotmob API
     data: dict = requests.get(publickey.fotmobtable, headers=publickey.headers).json()
 
+    # Format the league table
     formatted = [
         {
             "position": team["idx"],
