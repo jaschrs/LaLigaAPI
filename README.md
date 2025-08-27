@@ -45,7 +45,7 @@ Endpoint|Description
 
 Example output: /table
 
-```js
+```json
 [
   "laliga_table",
   [
@@ -66,7 +66,7 @@ Example output: /table
 
 Example output: /fixtures/[matchweek]
 
-```js
+```json
 {
   "fixtures mw [matchweek specified]": [
     {
