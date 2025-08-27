@@ -36,16 +36,16 @@ Returns the live LaLiga table in order
   "laliga_table",
   [
     {
-      "position": leauge position,
-      "team_name": club name,
-      "played": games played,
-      "won": games won,
-      "drawn": drawn games,
-      "lost": games lost,
-      "goals_for": goals scored by the team,
-      "goals_against": goals scored against the team,
-      "goal_difference": goals for subracted by goals against,
-      "points": league points
+      "position": int league position,
+      "team_name": "club name",
+      "played": int games played,
+      "won": int games won,
+      "drawn": int drawn games,
+      "lost": int games lost,
+      "goals_for": int goals scored by the team,
+      "goals_against": int goals scored against the team,
+      "goal_difference": int goals for subracted by goals against,
+      "points": int league points
     },
 ...
 ```
@@ -59,13 +59,13 @@ Returns the fixtures occurring on specified matchweek
     {
       "home_team": "home team name",
       "away_team": "away team name",
-      "round": "matchweek",
+      "round": int matchweek,
       "canceled": boolean if match is canceled,
       "started": boolean if match has begun,
       "finished": boolean if match has concluded,
       "match_date_utc": "match date and time",
-      "home_score": home team score if applicable,
-      "away_score": score of away team if applicable
+      "home_score": int home team score if applicable,
+      "away_score": int score of away team if applicable
     },
 ...
 ```
