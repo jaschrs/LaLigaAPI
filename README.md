@@ -10,8 +10,13 @@ Note: Currently does not support player statistics
 # Overview
 With support from the highly popular football tracker "FotMob", this API provides the latest and most accurate information from The Campeonato Nacional de Liga de Primera División (LaLiga). Including live table updates, player statistics, and even fixtures. 
 
-# Disclaimer
-This project is not affiliated with or endorsed by FotMob. All data is owned by FotMob. This repository only provides code to access that data
+# Legal Notice
+This project is an unofficial API for LaLiga information. It is not affiliated with, endorsed by, or associated with FotMob.
+
+All data provided (including but not limited to match results, fixtures, player statistics, and league tables) originates from FotMob.
+All rights to this data remain with FotMob and/or their data providers.
+
+This repository only provides the code to access and serve that information. Users of this project are solely responsible for ensuring their use of the data complies with FotMob’s Terms of Service.
 
 - Repository only provides code to access publicy available data.
 - Data is sourced from FotMob, and users must respect FotMob’s terms.
