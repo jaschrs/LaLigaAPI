@@ -1,22 +1,30 @@
 <div align="center">
 
 [![Laliga](https://raw.githubusercontent.com/jaschrs/LaLigaAPI/refs/heads/master/.github/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png)](#readme)
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/6102a70a-6910-459c-a663-cf842da51969" />
 
 Note: Currently does not support player statistics
 
 [Help](#help)
+
+[![Unofficial](https://img.shields.io/badge/Unofficial%20API-Not%20affiliated%20with%20FotMob%20Or%20LaLiga-red?style=for-the-badge)](#legal-notice)
 </div>
 
 # Overview
 With support from the highly popular football tracker "FotMob", this API provides the latest and most accurate information from The Campeonato Nacional de Liga de Primera División (LaLiga). Including live table updates, player statistics, and even fixtures. 
 
-# Disclaimer
-This project is not affiliated with or endorsed by FotMob. All data is owned by FotMob. This repository only provides code to access that data
+# Legal Notice
+This project is an unofficial API for publicly available LaLiga statisic. It is not affiliated with, endorsed by, or associated with FotMob or LaLiga.
+
+All data provided (including but not limited to match results, fixtures, player statistics, and league tables) originates from FotMob.
+All rights to this data remain with FotMob and/or their data providers.
+
+This repository only provides the code to access and serve that information. Users of this project are solely responsible for ensuring their use of the data complies with FotMob’s Terms of Service.
 
 - Repository only provides code to access publicy available data.
 - Data is sourced from FotMob, and users must respect FotMob’s terms.
 - I don’t own or license the data itself.
-- The entire project is for educational purposes, not to be used commercially
+- The entire project is for educational purposes only
 
 # Usage
 1. Clone repository
@@ -28,10 +36,16 @@ This project is not affiliated with or endorsed by FotMob. All data is owned by 
 (Tested with Pycharm)
 
 # Endpoints
-/table
 
-Returns the live LaLiga table in order
-```js
+Endpoint|Description
+:---|:---
+/table|Returns the live LaLiga table in order
+/fixtures/[matchweek number]|Returns the fixtures occurring on specified matchweek
+/player/[name as found on FotMob]|Returns player statistics specifically in LaLiga
+
+Example output: /table
+
+```json
 [
   "laliga_table",
   [
@@ -50,10 +64,9 @@ Returns the live LaLiga table in order
 ...
 ```
 
-/fixtures/[matchweek]
+Example output: /fixtures/[matchweek]
 
-Returns the fixtures occurring on specified matchweek
-```js
+```json
 {
   "fixtures mw [matchweek specified]": [
     {
@@ -71,4 +84,6 @@ Returns the fixtures occurring on specified matchweek
 ```
 
 # Help
-Ask AI with the proper context
+Usage help? : Ask AI
+
+Legal questions? : Read legal notice
