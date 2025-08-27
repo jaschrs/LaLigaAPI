@@ -3,8 +3,6 @@
 [![Laliga](https://raw.githubusercontent.com/jaschrs/LaLigaAPI/refs/heads/master/.github/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png)](#readme)
 <img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/6102a70a-6910-459c-a663-cf842da51969" />
 
-Note: Currently does not support player statistics
-
 [Help](#help)
 
 [![Unofficial](https://img.shields.io/badge/Unofficial%20API-Not%20affiliated%20with%20FotMob%20Or%20LaLiga-red?style=for-the-badge)](#legal-notice)
@@ -29,9 +27,11 @@ This repository only provides the code to access and serve that information. Use
 # Usage
 1. Clone repository
 2. Run `pip install -r requirements.txt` in the terminal
-3. Run main.py
-4. Follow link that appears in terminal
-5. Make requests with that link
+3. Fetch some X-MAS key from request headers found on fotmob's website (preferably from the TLTABLE network request)
+4. Paste key in app/public.py/PublicKey.xmaskey
+5. Run main.py
+6. Follow link that appears in terminal
+7. Make requests with that link
 
 (Tested with Pycharm)
 
@@ -41,7 +41,7 @@ Endpoint|Description
 :---|:---
 /table|Returns the live LaLiga table in order
 /fixtures/[matchweek number]|Returns the fixtures occurring on specified matchweek
-/player/[name as found on FotMob]|Returns player statistics specifically in LaLiga
+/[team name]/[player name]|Returns player statistics specifically in LaLiga
 
 Example output: /table
 
@@ -81,6 +81,13 @@ Example output: /fixtures/[matchweek]
       "away_score": int score of away team if applicable
     },
 ...
+```
+
+Example output: /[team name]/[player name]
+```json
+{
+
+}
 ```
 
 # Help
