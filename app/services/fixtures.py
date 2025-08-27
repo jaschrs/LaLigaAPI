@@ -24,7 +24,7 @@ def get_fixtures(matchweek: int):
                 {
                 "home_team": match["home"]["name"],
                 "away_team": match["away"]["name"],
-                "round": match["round"],
+                "round": int(match["round"]),
                 "canceled": match["status"]["cancelled"],
                 "started": match["status"]["started"],
                 "finished": match["status"]["finished"],
