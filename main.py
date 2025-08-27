@@ -1,3 +1,4 @@
+# Importing flask here is redundant but allow to define the type for the app which I like
 import flask
 from app.localservice import config_local_service
 from app.services.table import get_table
