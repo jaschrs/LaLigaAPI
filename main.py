@@ -14,9 +14,9 @@ def main():
     def table():
         return get_table()
 
-    @app.route("/player/<player_name>")
-    def player(player_name: str):
-        return get_player_stats(player_name)
+    @app.route("/<team_name>/<player_name>")
+    def player(team_name: str, player_name: str):
+        return get_player_stats(team_name, player_name)
 
     @app.route("/fixtures/<matchweek>")
     def fixtures(matchweek: int):
