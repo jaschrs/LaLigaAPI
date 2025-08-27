@@ -85,4 +85,5 @@ Example output: /fixtures/[matchweek]
 
 # Help
 Usage help? : Ask AI
+
 Legal questions? : Read legal notice
