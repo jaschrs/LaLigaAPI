@@ -1,6 +1,7 @@
 <div align="center">
 
 [![Laliga](https://raw.githubusercontent.com/jaschrs/LaLigaAPI/refs/heads/master/.github/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png)](#readme)
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/6102a70a-6910-459c-a663-cf842da51969" />
 
 Note: Currently does not support player statistics
 
